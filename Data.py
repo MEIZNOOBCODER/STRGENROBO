@@ -31,7 +31,7 @@ Yᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ Pʏʀᴏɢʀᴀᴍ 
     # Rest Buttons
     buttons = [
         [InlineKeyboardButton("🔥 sᴛᴀʀᴛ ɢᴇɴᴇʀᴀᴛɪɴɢ sᴛʀɪɴɢ 🔥", callback_data="generate")],
-        [InlineKeyboardButton("✨ ᴍᴏʀᴇ ʙᴏᴛs ʙʏ ᴍᴇ ✨", url="https://t.me/AnonymousRobotSupport/5232)]
+        [InlineKeyboardButton("✨ ᴍᴏʀᴇ ʙᴏᴛs ʙʏ ᴍᴇ ✨", url="https://t.me/AnonymousRobotSupport/5232)],
         [
             InlineKeyboardButton("ʜᴇʟᴘ ❔", callback_data="help"),
             InlineKeyboardButton("🎪 ᴀʙᴏᴜᴛ 🎪", callback_data="about")
