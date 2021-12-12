@@ -35,7 +35,7 @@ Yᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ Pʏʀᴏɢʀᴀᴍ 
         [
             InlineKeyboardButton("ʜᴇʟᴘ ❔", callback_data="help"),
             InlineKeyboardButton("🎪 ᴀʙᴏᴜᴛ 🎪", callback_data="about")
-        ]
+        ],
 
     # Help Message
     HELP = """
