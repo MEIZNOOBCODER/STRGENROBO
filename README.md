@@ -1,4 +1,4 @@
-# ❤ Pyrogram and Telethon String Session Generator Bot [@AnonymousStringBot](https://telegram.me/AnonymousStringBot) ❤
+# 🖤 Pyrogram and Telethon String Session Generator Bot [@AnonymousStringBot](https://telegram.me/AnonymousStringBot) 🖤
 
 > Thanks a lot for starring this repository. A star from you made my day. This appreciates me to keep doing such things.
 
