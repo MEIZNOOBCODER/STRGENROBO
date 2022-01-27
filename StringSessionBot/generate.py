@@ -21,8 +21,8 @@ from telethon.errors import (
     PasswordHashInvalidError
 )
 
-ERROR_MESSAGE = "ᴡᴛꜰ! sᴏᴍᴇᴛʜɪɴɢ ʜᴀᴘᴘᴇɴᴇᴅ ᴡʀᴏɴɢ ! \n\n**Error** : {} " \
-            "\n\nᴘʟᴇᴀsᴇ ꜰᴏʀᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ @AnonymousRobotSupport ɪꜰ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴅᴏᴇsɴ'ᴛ ᴄᴏɴᴛᴀɪɴ ᴀɴʏ" \
+ERROR_MESSAGE = "ᴡᴛꜰ! sᴏᴍᴇᴛʜɪɴɢ ʜᴀᴘᴘᴇɴᴇᴅ ᴡʀᴏɴɢ ! \n\nʙᴛᴡ ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ɪꜰ ᴛʜᴇ sᴛʀɪɴɢ ᴡᴀs ɢᴇɴᴇʀᴀᴛᴇᴅ​\n**ᴇʀʀᴏʀ​** : {} " \
+            "\n\nᴘʟᴇᴀsᴇ ꜰᴏʀᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ @DevilsHeavenMF ɪꜰ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴅᴏᴇsɴ'ᴛ ᴄᴏɴᴛᴀɪɴ ᴀɴʏ" \
             "sᴇɴsɪᴛɪᴠᴇ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ." \
             "ᴛʜɪs ᴇʀʀᴏʀ ɪs ɴᴏᴛ ʟᴏɢɢᴇᴅ ʙʏ ᴍᴇ !"
 
@@ -32,8 +32,8 @@ async def main(_, msg):
     await msg.reply(
         "ᴘʟᴇᴀsᴇ ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴘʏᴛʜᴏɴ ʟɪʙʀᴀʀʏ ꜰᴏʀ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ ꜰᴏʀ",
         reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton("Pyrogram", callback_data="pyrogram"),
-            InlineKeyboardButton("Telethon", callback_data="telethon")
+            InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ", callback_data="pyrogram"),
+            InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ", callback_data="telethon")
         ]])
     )
 
@@ -114,10 +114,10 @@ async def generate_session(bot, msg, telethon=False):
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = "**{} sᴛʀɪɴɢ sᴇssɪᴏɴ** \n\n`{}` \n\n ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ @AnonymousStringBot".format("TELETHON" if telethon else "PYROGRAM", string_session)
+    text = "**{} sᴛʀɪɴɢ sᴇssɪᴏɴ** \n\n`{}` \n\n ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](t.me/anonymous_was_bot)".format("TELETHON" if telethon else "PYROGRAM", string_session)
     await client.send_message("me", text)
     await client.disconnect()
-    await phone_code_msg.reply("sᴜᴄᴄᴇssꜰᴜʟʟʏ ɢᴇɴᴇʀᴀᴛᴇᴅ {} sᴛʀɪɴɢ sᴇssɪᴏɴ. \n\nᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ! \n\nBy @anonymous_was_bot".format("telethon" if telethon else "pyrogram"))
+    await phone_code_msg.reply("sᴜᴄᴄᴇssꜰᴜʟʟʏ ɢᴇɴᴇʀᴀᴛᴇᴅ {} sᴛʀɪɴɢ sᴇssɪᴏɴ. \n\nᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ! \n\nʙʏ​ [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](t.me/anonymous_was_bot)".format("telethon" if telethon else "pyrogram"))
 
 
 async def cancelled(msg):
