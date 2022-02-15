@@ -59,7 +59,7 @@ Telegram Bot to Generate Pyrogram and Telethon String Session.
 
 ## Support
 
-Support Group :- [AnonymousRobotSupport](telegram.me/AnonymousRobotSupport)
+Support Group :- [DevilsHeavenMF](telegram.me/DevilsHeavenMF)
 
 ## :)
 
