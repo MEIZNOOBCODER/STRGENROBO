@@ -37,28 +37,3 @@ Yᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ Pʏʀᴏɢʀᴀᴍ 
         ],
         [InlineKeyboardButton("🖤 ᴍᴏʀᴇ ᴀᴍᴀᴢɪɴɢ ʙᴏᴛs​ 🖤", url="https://t.me/DevilsHeavenMF")],
   ]
-
-    # Help Message
-    HELP = """
-✨ **ᴍʏ ᴄᴏᴍᴍᴀɴᴅs** ✨
-
-/about - About The Bot
-/help - This Message
-/start - Start the Bot
-/generate - Start Generating Session
-/cancel - Cancel the process
-/restart - Cancel the process
-"""
-
-    # About Message
-    ABOUT = """
-**ᴀʙᴏᴜᴛ ᴍᴇ** 
-
-A ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ᴘʏʀᴏɢʀᴀᴍ ᴀɴᴅ ᴛᴇʟᴇᴛʜᴏɴ sᴛʀɪɴɢ sᴇssɪᴏɴ ʙʏ @DevilsHeavenMF
-
-ꜰʀᴀᴍᴇᴡᴏʀᴋ : [Pyrogram](docs.pyrogram.org)
-
-ʟᴀɴɢᴜᴀɢᴇ : [Python](www.python.org)
-
-ᴅᴇᴠᴇʟᴏᴘᴇʀ : [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](t.me/anonymous_was_bot)
-    """
