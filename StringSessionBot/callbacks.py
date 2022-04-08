@@ -21,26 +21,6 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
                 text=Data.START.format(callback_query.from_user.mention, mention),
                 reply_markup=InlineKeyboardMarkup(Data.buttons),
             )
-    elif query == "about":
-        chat_id = callback_query.from_user.id
-        message_id = callback_query.message.message_id
-        await bot.edit_message_text(
-            chat_id=chat_id,
-            message_id=message_id,
-            text=Data.ABOUT,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(Data.home_buttons),
-        )
-    elif query == "help":
-        chat_id = callback_query.from_user.id
-        message_id = callback_query.message.message_id
-        await bot.edit_message_text(
-            chat_id=chat_id,
-            message_id=message_id,
-            text="**ʜᴇʀᴇ's ᴛʜᴇ ɢᴜɪᴅᴇ ᴛᴏ ᴋɴᴏᴡ ᴜsɪɴɢ ᴍᴇ.**\n" + Data.HELP,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(Data.home_buttons),
-        )
     elif query == "generate":
         await callback_query.message.reply(
             "ᴘʟᴇᴀsᴇ ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴘʏᴛʜᴏɴ ʟɪʙʀᴀʀʏ ꜰᴏʀ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ ꜰᴏʀ :-",
