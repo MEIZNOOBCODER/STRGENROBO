@@ -27,7 +27,7 @@ ERROR_MESSAGE = "ᴡᴛꜰ! sᴏᴍᴇᴛʜɪɴɢ ʜᴀᴘᴘᴇɴᴇᴅ ᴡʀ�
             "ᴛʜɪs ᴇʀʀᴏʀ ɪs ɴᴏᴛ ʟᴏɢɢᴇᴅ ʙʏ ᴍᴇ !"
 
 
-@Client.on_message(filters.private & ~filters.forwarded & filters.command('generate'))
+@Client.on_message(filters.private & ~filters.forwarded & filters.command(["start", "generate", "string", "gen"]))
 async def main(_, msg):
     await msg.reply(
         "ᴘʟᴇᴀsᴇ ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴘʏᴛʜᴏɴ ʟɪʙʀᴀʀʏ ꜰᴏʀ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ ꜰᴏʀ",
